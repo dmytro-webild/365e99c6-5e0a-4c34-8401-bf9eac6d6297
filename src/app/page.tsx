@@ -118,9 +118,9 @@ export default function LandingPage() {
       logoText="Silent Theory"
       copyrightText="© 2025 | Silent Theory Design Agency"
       socialLinks={[
-        { icon: Twitter, href: "#", ariaLabel: "Twitter" },
+        { icon: Twitter, href: "https://twitter.com", ariaLabel: "Twitter" },
         { icon: Instagram, href: "https://www.instagram.com/silenttheory", ariaLabel: "Instagram" },
-        { icon: Linkedin, href: "#", ariaLabel: "Linkedin" },
+        { icon: Linkedin, href: "https://linkedin.com", ariaLabel: "Linkedin" },
       ]}
     />
   </div>
