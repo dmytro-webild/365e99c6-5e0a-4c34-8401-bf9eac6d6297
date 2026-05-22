@@ -8,7 +8,7 @@ import HeroCentered from '@/components/sections/hero/HeroCentered';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
-import { Instagram, Linkedin, Sparkles, Twitter, Check, Phone } from "lucide-react";
+import { Instagram, Sparkles, Check, Phone } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -101,9 +101,7 @@ export default function LandingPage() {
       logoText="Silent Theory"
       copyrightText="© 2025 | Silent Theory Design Agency"
       socialLinks={[
-        { icon: Twitter, href: "https://twitter.com", ariaLabel: "Twitter" },
         { icon: Instagram, href: "https://www.instagram.com/silenttheory303", ariaLabel: "Instagram" },
-        { icon: Linkedin, href: "https://linkedin.com", ariaLabel: "Linkedin" },
         { icon: Phone, href: "tel:7205913412", ariaLabel: "Call us" },
       ]}
     />
