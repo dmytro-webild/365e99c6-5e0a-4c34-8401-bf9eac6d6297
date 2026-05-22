@@ -65,7 +65,8 @@ export default function LandingPage() {
       description="Silent Theory was founded on the belief that great design doesn't just look good—it performs. We specialize in bespoke digital architecture that balances aesthetic beauty with functional excellence."
       subdescription="We don't just build sites; we build legacies. Every pixel is calculated, every interaction intentional."
       icon={Sparkles}
-      imageSrc="https://img.b2bpic.net/free-photo/scissors-brushes-pencils-pen-holder_114579-32530.jpg"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DnmBc0Mbgq3TXqKNqZJFeJxViU/uploaded-1779464484053-84o71b61.png"
+      imageAlt="Silent Theory Logo"
       mediaAnimation="slide-up"
     />
   </div>
