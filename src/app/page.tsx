@@ -48,7 +48,7 @@ export default function LandingPage() {
         { src: "https://img.b2bpic.net/free-photo/smiling-homosexual-man-official-suit-looking-camera-close-up-shot-happy-gay-getting-dressed-wedding-ceremony-standing-hotel-room-with-his-partner-background-love-emotion-concept_74855-22675.jpg", alt: "Client 1" },
         { src: "https://img.b2bpic.net/free-photo/smiling-businessman-standing-airport_107420-85035.jpg", alt: "Client 2" },
         { src: "https://img.b2bpic.net/free-photo/male-employee-with-coffee-cup-office_482257-119420.jpg", alt: "Client 3" },
-        { src: "https://img.b2bpic.net/free-photo/happy-businessman-having-conversation-with-his-partner-workplace_23-2147899787.jpg", alt: "Client 4" },
+        { src: "https://img.b2bpic.net/happy-businessman-having-conversation-with-his-partner-workplace_23-2147899787.jpg", alt: "Client 4" },
         { src: "https://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg", alt: "Client 5" },
       ]}
       avatarText="Trusted by 50+ visionary brands"
@@ -96,8 +96,8 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       plans={[
-        { id: "basic", badge: "Essential", price: "$800", subtitle: "For simple brand identity", features: ["Responsive Layout", "Logo Design", "SEO Setup"], buttons: [{ text: "Get Started", href: "#contact" }] },
-        { id: "pro", badge: "Pro Growth", badgeIcon: Check, price: "$1,000", subtitle: "For scaling e-commerce", features: ["Everything in Essential", "CMS Integration", "Speed Optimization"], buttons: [{ text: "Get Started", href: "#contact" }] }
+        { id: "basic", badge: "Essential", price: "$800", subtitle: "For simple brand identity", features: ["Responsive Layout", "Logo Design", "SEO Setup"], buttons: [{ text: "Get Started", onClick: () => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }) }] },
+        { id: "pro", badge: "Pro Growth", badgeIcon: Check, price: "$1,000", subtitle: "For scaling e-commerce", features: ["Everything in Essential", "CMS Integration", "Speed Optimization"], buttons: [{ text: "Get Started", onClick: () => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }) }] }
       ]}
     />
   </div>
@@ -109,7 +109,7 @@ export default function LandingPage() {
       tag="Ready to build?"
       title="Let's Collaborate"
       description="Drop us a line to discuss your vision, and we will get back to you within 24 hours."
-      onSubmit={(email) => console.log("User email:", email)}
+      onSubmit={(email) => alert(`Thank you for your interest! We will contact you at ${email} shortly.`)}
     />
   </div>
 
