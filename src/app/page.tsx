@@ -51,8 +51,8 @@ export default function LandingPage() {
       ]}
       avatarText="Trusted by 50+ visionary brands"
       buttons={[
-        { text: "Get Started", href: "#contact" },
-        { text: "View Pricing", href: "#pricing" },
+        { text: "Get Started", onClick: () => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }) },
+        { text: "View Pricing", onClick: () => document.querySelector('#pricing')?.scrollIntoView({ behavior: 'smooth' }) },
       ]}
     />
   </div>
