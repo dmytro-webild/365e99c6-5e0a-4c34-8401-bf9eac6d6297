@@ -95,8 +95,20 @@ export default function LandingPage() {
         ]}
         textarea={{ name: "message", placeholder: "Your project details and note...", required: true, rows: 4 }}
         useInvertedBackground={false}
-        onSubmit={(data) => { 
-            window.location.href = `mailto:hello@silenttheory.com?subject=Contact Request from ${data.name}&body=From: ${data.email}%0A%0A${data.message}`;
+        onSubmit={async (data) => {
+            try {
+                const response = await fetch("https://formspree.io/f/xvgzgkgv", {
+                    method: "POST",                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(data)
+                });
+                if (response.ok) {
+                    alert("Message sent successfully!");
+                } else {
+                    alert("Something went wrong, please try again.");
+                }
+            } catch (error) {
+                alert("Error sending message.");
+            }
         }}
     />
   </div>
