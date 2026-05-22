@@ -79,8 +79,8 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       plans={[
-        { id: "basic", badge: "Essential", price: "$800", subtitle: "For simple brand identity", features: ["Responsive Layout", "Logo Design", "SEO Setup"], buttons: [{ text: "Get Started", onClick: () => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }) }] },
-        { id: "pro", badge: "Pro Growth", badgeIcon: Check, price: "$1,000", subtitle: "For scaling e-commerce", features: ["Everything in Essential", "CMS Integration", "Speed Optimization"], buttons: [{ text: "Get Started", onClick: () => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }) }] }
+        { id: "basic", badge: "Essential", price: "$450", subtitle: "Upfront", features: ["Responsive Layout", "Logo Design", "SEO Setup"], buttons: [{ text: "Get Started", onClick: () => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }) }] },
+        { id: "pro", badge: "Pro Growth", badgeIcon: Check, price: "$400", subtitle: "When done ", features: ["Everything in Essential", "CMS Integration", "Speed Optimization"], buttons: [{ text: "Get Started", onClick: () => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }) }] }
       ]}
     />
   </div>
