@@ -40,8 +40,8 @@ export default function LandingPage() {
   <div id="hero" data-section="hero">
       <HeroCentered
       background={{ variant: "gradient-bars" }}
-      title="Design That Speaks Volumes"
-      description="Silent Theory is a premier web design agency crafting digital experiences that convert, engage, and inspire. Let's redefine your online presence."
+      title="Design That Drives Profits"
+      description="My websites are crafted to be the absolute best in the industry. I build high-performance digital experiences designed specifically to help your business stand out, reach more customers, and maximize your revenue."
       avatars={[
         { src: "https://img.b2bpic.net/free-photo/smiling-homosexual-man-official-suit-looking-camera-close-up-shot-happy-gay-getting-dressed-wedding-ceremony-standing-hotel-room-with-his-partner-background-love-emotion-concept_74855-22675.jpg", alt: "Client 1" },
         { src: "https://img.b2bpic.net/free-photo/smiling-businessman-standing-airport_107420-85035.jpg", alt: "Client 2" },
