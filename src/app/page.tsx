@@ -6,7 +6,6 @@ import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterCard from '@/components/sections/footer/FooterCard';
 import HeroCentered from '@/components/sections/hero/HeroCentered';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
-import ProductCardThree from '@/components/sections/product/ProductCardThree';
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import { Instagram, Linkedin, Sparkles, Twitter, Check } from "lucide-react";
@@ -31,7 +30,6 @@ export default function LandingPage() {
       navItems={[
         { name: "Home", id: "hero" },
         { name: "About", id: "about" },
-        { name: "Work", id: "products" },
         { name: "Pricing", id: "pricing" },
         { name: "Contact", id: "contact" },
       ]}
@@ -47,14 +45,14 @@ export default function LandingPage() {
       avatars={[
         { src: "https://img.b2bpic.net/free-photo/smiling-homosexual-man-official-suit-looking-camera-close-up-shot-happy-gay-getting-dressed-wedding-ceremony-standing-hotel-room-with-his-partner-background-love-emotion-concept_74855-22675.jpg", alt: "Client 1" },
         { src: "https://img.b2bpic.net/free-photo/smiling-businessman-standing-airport_107420-85035.jpg", alt: "Client 2" },
-        { src: "https://img.b2bpic.net/free-photo/male-employee-with-coffee-cup-office_482257-119420.jpg", alt: "Client 3" },
+        { src: "https://img.b2bpic.net/male-employee-with-coffee-cup-office_482257-119420.jpg", alt: "Client 3" },
         { src: "https://img.b2bpic.net/happy-businessman-having-conversation-with-his-partner-workplace_23-2147899787.jpg", alt: "Client 4" },
         { src: "https://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg", alt: "Client 5" },
       ]}
       avatarText="Trusted by 50+ visionary brands"
       buttons={[
         { text: "Get Started", href: "#contact" },
-        { text: "View Work", href: "#products" },
+        { text: "View Pricing", href: "#pricing" },
       ]}
     />
   </div>
@@ -69,22 +67,6 @@ export default function LandingPage() {
       icon={Sparkles}
       imageSrc="https://img.b2bpic.net/free-photo/scissors-brushes-pencils-pen-holder_114579-32530.jpg"
       mediaAnimation="slide-up"
-    />
-  </div>
-
-  <div id="products" data-section="products">
-      <ProductCardThree
-      animationType="slide-up"
-      textboxLayout="default"
-      gridVariant="three-columns-all-equal-width"
-      useInvertedBackground={false}
-      products={[
-        { id: "p1", name: "Mobile FinTech UI", price: "View Project", imageSrc: "https://img.b2bpic.net/free-photo/flat-lay-nutritional-counter-app-composition_23-2149880606.jpg" },
-        { id: "p2", name: "Corporate Identity Site", price: "View Project", imageSrc: "https://img.b2bpic.net/free-photo/still-life-graphic-design-office_23-2151345415.jpg" },
-        { id: "p3", name: "E-Commerce Experience", price: "View Project", imageSrc: "https://img.b2bpic.net/free-photo/mobile-shopping-experience_23-2151952959.jpg" },
-      ]}
-      title="Selected Works"
-      description="Explore our portfolio of recent design and development projects."
     />
   </div>
 
