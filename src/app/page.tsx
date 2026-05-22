@@ -94,6 +94,7 @@ export default function LandingPage() {
           { name: "email", type: "email", placeholder: "Your Email Address", required: true }
         ]}
         textarea={{ name: "message", placeholder: "Your project details and note...", required: true, rows: 4 }}
+        useInvertedBackground={false}
         onSubmit={(data) => { 
             window.location.href = `mailto:hello@silenttheory.com?subject=Contact Request from ${data.name}&body=From: ${data.email}%0A%0A${data.message}`;
         }}
