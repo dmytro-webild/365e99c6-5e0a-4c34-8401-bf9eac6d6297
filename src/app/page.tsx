@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactCTA from '@/components/sections/contact/ContactCTA';
+import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterCard from '@/components/sections/footer/FooterCard';
 import HeroCentered from '@/components/sections/hero/HeroCentered';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
@@ -86,13 +86,17 @@ export default function LandingPage() {
   </div>
 
   <div id="contact" data-section="contact">
-      <ContactCTA
-      tag="Ready to build?"
-      title="Let's Collaborate"
-      description="Drop us a line or call us at 720-591-3412. Discuss your vision, and we will get back to you within 24 hours. Please include your project details and any specific message below."
-      buttons={[{ text: "Contact Us", href: "mailto:hello@silenttheory.com" }]}
-      useInvertedBackground={false}
-      background={{ variant: "gradient-bars" }}
+    <ContactSplitForm
+        title="Let's Collaborate"
+        description="Drop us a line to discuss your vision. We will get back to you within 24 hours."
+        inputs={[
+          { name: "name", type: "text", placeholder: "Full Name", required: true },
+          { name: "email", type: "email", placeholder: "Your Email Address", required: true }
+        ]}
+        textarea={{ name: "message", placeholder: "Your project details and note...", required: true, rows: 4 }}
+        onSubmit={(data) => { 
+            window.location.href = `mailto:hello@silenttheory.com?subject=Contact Request from ${data.name}&body=From: ${data.email}%0A%0A${data.message}`;
+        }}
     />
   </div>
 
