@@ -3,16 +3,13 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import ContactCenter from '@/components/sections/contact/ContactCenter';
-import FeatureCardTwentyEight from '@/components/sections/feature/FeatureCardTwentyEight';
 import FooterCard from '@/components/sections/footer/FooterCard';
 import HeroCentered from '@/components/sections/hero/HeroCentered';
-import MetricCardTwo from '@/components/sections/metrics/MetricCardTwo';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
-import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
-import TestimonialCardFifteen from '@/components/sections/testimonial/TestimonialCardFifteen';
-import { Instagram, Linkedin, Sparkles, Twitter } from "lucide-react";
+import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
+import { Instagram, Linkedin, Sparkles, Twitter, Check } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -35,6 +32,7 @@ export default function LandingPage() {
         { name: "Home", id: "hero" },
         { name: "About", id: "about" },
         { name: "Work", id: "products" },
+        { name: "Pricing", id: "pricing" },
         { name: "Contact", id: "contact" },
       ]}
       brandName="Silent Theory"
@@ -90,6 +88,18 @@ export default function LandingPage() {
     />
   </div>
 
+  <div id="pricing" data-section="pricing">
+      <PricingCardTwo
+      title="Flexible Pricing"
+      description="Transparent packages designed for growing brands."
+      animationType="slide-up"
+      plans={[
+        { id: "basic", badge: "Essential", price: "$1,500", subtitle: "For simple brand identity", features: ["Responsive Layout", "Logo Design", "SEO Setup"], buttons: [{ text: "Get Started", href: "#contact" }] },
+        { id: "pro", badge: "Pro Growth", badgeIcon: Check, price: "$3,500", subtitle: "For scaling e-commerce", features: ["Everything in Essential", "CMS Integration", "Speed Optimization"], buttons: [{ text: "Get Started", href: "#contact" }] }
+      ]}
+    />
+  </div>
+
   <div id="contact" data-section="contact">
       <ContactCenter
       useInvertedBackground={false}
@@ -97,6 +107,7 @@ export default function LandingPage() {
       tag="Ready to build?"
       title="Let's Collaborate"
       description="Drop us a line to discuss your vision, and we will get back to you within 24 hours."
+      onSubmit={(email) => console.log("User email:", email)}
     />
   </div>
 
@@ -106,7 +117,7 @@ export default function LandingPage() {
       copyrightText="© 2025 | Silent Theory Design Agency"
       socialLinks={[
         { icon: Twitter, href: "#", ariaLabel: "Twitter" },
-        { icon: Instagram, href: "#", ariaLabel: "Instagram" },
+        { icon: Instagram, href: "https://www.instagram.com/silenttheory", ariaLabel: "Instagram" },
         { icon: Linkedin, href: "#", ariaLabel: "Linkedin" },
       ]}
     />
