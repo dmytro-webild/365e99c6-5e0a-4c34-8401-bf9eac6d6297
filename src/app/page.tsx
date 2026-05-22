@@ -96,8 +96,8 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       plans={[
-        { id: "basic", badge: "Essential", price: "$1,500", subtitle: "For simple brand identity", features: ["Responsive Layout", "Logo Design", "SEO Setup"], buttons: [{ text: "Get Started", href: "#contact" }] },
-        { id: "pro", badge: "Pro Growth", badgeIcon: Check, price: "$3,500", subtitle: "For scaling e-commerce", features: ["Everything in Essential", "CMS Integration", "Speed Optimization"], buttons: [{ text: "Get Started", href: "#contact" }] }
+        { id: "basic", badge: "Essential", price: "$800", subtitle: "For simple brand identity", features: ["Responsive Layout", "Logo Design", "SEO Setup"], buttons: [{ text: "Get Started", href: "#contact" }] },
+        { id: "pro", badge: "Pro Growth", badgeIcon: Check, price: "$1,000", subtitle: "For scaling e-commerce", features: ["Everything in Essential", "CMS Integration", "Speed Optimization"], buttons: [{ text: "Get Started", href: "#contact" }] }
       ]}
     />
   </div>
