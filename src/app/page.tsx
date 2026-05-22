@@ -93,6 +93,8 @@ export default function LandingPage() {
       title="Flexible Pricing"
       description="Transparent packages designed for growing brands."
       animationType="slide-up"
+      textboxLayout="default"
+      useInvertedBackground={false}
       plans={[
         { id: "basic", badge: "Essential", price: "$1,500", subtitle: "For simple brand identity", features: ["Responsive Layout", "Logo Design", "SEO Setup"], buttons: [{ text: "Get Started", href: "#contact" }] },
         { id: "pro", badge: "Pro Growth", badgeIcon: Check, price: "$3,500", subtitle: "For scaling e-commerce", features: ["Everything in Essential", "CMS Integration", "Speed Optimization"], buttons: [{ text: "Get Started", href: "#contact" }] }
