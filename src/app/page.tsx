@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactCenter from '@/components/sections/contact/ContactCenter';
+import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterCard from '@/components/sections/footer/FooterCard';
 import HeroCentered from '@/components/sections/hero/HeroCentered';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
@@ -86,13 +86,13 @@ export default function LandingPage() {
   </div>
 
   <div id="contact" data-section="contact">
-      <ContactCenter
-      useInvertedBackground={false}
-      background={{ variant: "gradient-bars" }}
+      <ContactCTA
       tag="Ready to build?"
       title="Let's Collaborate"
-      description={`Drop us a line or call us at 720-591-3412. Discuss your vision, and we will get back to you within 24 hours.`}
-      onSubmit={(email) => alert(`Thank you for your interest! We will contact you at ${email} shortly.`)}
+      description="Drop us a line or call us at 720-591-3412. Discuss your vision, and we will get back to you within 24 hours. Please include your project details and any specific message below."
+      buttons={[{ text: "Contact Us", href: "mailto:hello@silenttheory.com" }]}
+      useInvertedBackground={false}
+      background={{ variant: "gradient-bars" }}
     />
   </div>
 
