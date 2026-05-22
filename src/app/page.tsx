@@ -8,7 +8,7 @@ import HeroCentered from '@/components/sections/hero/HeroCentered';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
-import { Instagram, Linkedin, Sparkles, Twitter, Check } from "lucide-react";
+import { Instagram, Linkedin, Sparkles, Twitter, Check, Phone } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -91,7 +91,7 @@ export default function LandingPage() {
       background={{ variant: "gradient-bars" }}
       tag="Ready to build?"
       title="Let's Collaborate"
-      description="Drop us a line to discuss your vision, and we will get back to you within 24 hours."
+      description={`Drop us a line or call us at 720-591-3412. Discuss your vision, and we will get back to you within 24 hours.`}
       onSubmit={(email) => alert(`Thank you for your interest! We will contact you at ${email} shortly.`)}
     />
   </div>
@@ -102,8 +102,9 @@ export default function LandingPage() {
       copyrightText="© 2025 | Silent Theory Design Agency"
       socialLinks={[
         { icon: Twitter, href: "https://twitter.com", ariaLabel: "Twitter" },
-        { icon: Instagram, href: "https://www.instagram.com/silenttheory", ariaLabel: "Instagram" },
+        { icon: Instagram, href: "https://www.instagram.com/silenttheory303", ariaLabel: "Instagram" },
         { icon: Linkedin, href: "https://linkedin.com", ariaLabel: "Linkedin" },
+        { icon: Phone, href: "tel:7205913412", ariaLabel: "Call us" },
       ]}
     />
   </div>
